@@ -1,0 +1,26 @@
+p{
+    color: blue;
+}
+
+.Destacados{
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#Rojo{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+#Azul{
+    width: 200px;
+    height: 300px;
+    background-color: rgba(90, 90, 222, 0.878);
+    padding: 20px;
+    border: 5px solid black;
+    box-sizing: border-box;
+}
