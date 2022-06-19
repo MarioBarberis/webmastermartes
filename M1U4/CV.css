@@ -1,0 +1,32 @@
+body{
+    margin-left: 70px;
+    margin-right: 600px;
+}
+
+h1{
+    font-size: 70px;
+}
+
+IMG{
+    width: 1200PX;
+    margin-top: -30px;
+}
+
+.Destacado{
+    font-size: 22px;
+    font-weight: 100;
+    font-style: normal;
+    margin-bottom: 40px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+h2{
+    font-size: 25px;
+}
+
+ol{
+    font-size: 25px;
+}
