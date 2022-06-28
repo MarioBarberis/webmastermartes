@@ -1,0 +1,108 @@
+/* 
+Fuentes:
+font-family: 'Titan One', cursive;
+*/
+
+
+body{
+    margin-left: 90px;
+    margin-right: 900px;
+}
+
+.Caja1{
+font-family: 'Titan One', cursive;
+font-size: 60px;
+text-align: center;
+width: 1200px;
+height: 80px;
+background: #eee18e;
+background: linear-gradient(90deg,#eee18e 0%, #ffff00 40%, #ffff00 40%, #ffec00 80%);
+background: -webkit-linear-gradient(90deg,#eee18e 0%, #ffff00 40%, #ffff00 40%, #ffec00 80%);
+background: -moz-linear-gradient(90deg,#eee18e 0%, #ffff00 40%, #ffff00 40%, #ffec00 80%);
+border-radius: 50px;
+box-shadow: -15px -10px 41px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -15px -10px 41px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -15px -10px 41px 0px rgba(0,0,0,0.75);
+}
+
+.Caja2 {
+    text-align: justify;
+    padding-left: 15px;
+    font-size: 30px;
+    width: 1200px;
+    height: 40px;
+    background-color: #EEE18E;
+    border-radius: 95px 95px 95px 95px;
+    -webkit-border-radius: 95px 95px 95px 95px;
+    -moz-border-radius: 95px 95px 95px 95px;
+    background: #eee18e;
+    border: 2px groove #000000;
+    
+}
+
+.Caja3 {
+    text-align: justify;
+    padding-left: 15px;
+    font-size: 30px;
+    width: 1200px;
+    height: 40px;
+    background-color: #EEE18E;
+    border-radius: 95px 95px 95px 95px;
+    -webkit-border-radius: 95px 95px 95px 95px;
+    -moz-border-radius: 95px 95px 95px 95px;
+    background: #eee18e;
+    border: 2px groove #000000;
+}
+
+
+.icono1{
+    font-size: 25px;
+}
+
+.icono2{
+    font-size: 22px;
+}
+
+
+IMG{
+    width: 1200PX;
+    margin-top:20px;
+    filter: brightness(82%);
+    -webkit-filter: brightness(82%);
+    -moz-filter: brightness(82%);
+}
+
+#Presentacion{
+    font-size: 19px;
+    text-align: initial;
+    width: 1200px;
+    height: 70px;
+    background-color: #EEE18E;
+    box-sizing: border-box;
+    border: 4px solid black;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.Destacado{
+    font-size: 22px;
+    text-align: initial;
+    font-weight: 100;
+    font-style: normal;
+}
+
+h3{
+    font-size: 22px;
+}
+
+ol{
+    font-size: 22px;
+}
+
+.P{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    margin-right: -300px;
+    column-count: 2;
+}

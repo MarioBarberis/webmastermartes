@@ -1,0 +1,41 @@
+/*
+font-family: 'Smooch', cursive;
+font-family: 'Titan One', cursive;
+*/
+
+.Caja{
+    /*Gradeante*/
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(97deg,#0c00ff 0%, #197119 80%);
+    background: -webkit-linear-gradient(97deg,#0c00ff 0%, #197119 80%);
+    background: -moz-linear-gradient(97deg,#0c00ff 0%, #197119 80%);
+
+    /*Sombra, tambien se puede usar un generador y copy-paste*/
+    box-shadow: -10px -20px 15px black;   /* eje x eje Y desenfoque y color*/
+    border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;  /*redondeo de borde*/
+}
+
+.texto{
+column-count: 2;  /*cantidad de columnas*/
+column-gap: 40px;  /*separacion*/
+column-rule: 2px dashed black;
+}
+
+h1{
+    font-family: 'Smooch', cursive;
+    font-size: 40px;
+}
+
+h2{
+    font-family: 'Titan One', cursive;
+    font-size: 18px;
+}
+
+.icono{
+    font-size: 100px;
+}
