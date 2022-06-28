@@ -100,9 +100,10 @@ ol{
 }
 
 .P{
-    font-size: 15px;
+    font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
-    margin-right: -300px;
+    margin-right: 185px;
     column-count: 2;
+    column-gap: 45px;
 }
