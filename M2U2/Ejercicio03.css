@@ -1,0 +1,40 @@
+.contenedor{
+    border: 3px solid #000000;
+    background: #ffffff;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.Item1{
+    width: 200px;
+    height: 200px; 
+    font-size: 20px;
+    color: white;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Item2{
+    width: 200px;
+    height: 200px; 
+    font-size: 20px;
+    color: white;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Item3{
+    width: 200px;
+    height: 200px; 
+    font-size: 20px;
+    color: white;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
