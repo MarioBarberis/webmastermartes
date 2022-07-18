@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplicando Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="Web Simple BT.css">
+</head>
+
+<body style="background-color:black;">
+
+  <!-- Intro -->
+  <div class="container-fluid" style="background-color:yellow;padding-bottom: 7px;">
+    <h3>
+      Pon atencion a esto
+      <small class="text-muted">Porque es mi primer sitio web formato simple</small>
+    </h3>
+  </div>
+
+  <!-- Opciones y buscador  -->
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Barra Navegadora</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Paguina Principal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Links Alternativos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Menú
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Anotarse plan común</a></li>
+              <li><a class="dropdown-item" href="#">Anotarse plan VIP</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Comunicarse con asesores</a></li>
+            </ul>
+        </ul>
+        <form class="d-flex" role="Buscar">
+          <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Lista y Formulario -->
+
+  <div class="container-fluid" style="padding-top:30px;">
+    <div class="row">
+      <!-- Lista -->
+      <div class="col-8" style="padding-left:30px;">
+        <table class="table table-dark table-hover" style="background-color:white;">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Apellido</th>
+              <th scope="col">Ciudad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mario</td>
+              <td>Gonzales</td>
+              <td>Mexico</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Luis</td>
+              <td>Garcia</td>
+              <td>Venezuela</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Jose</td>
+              <td>Martin</td>
+              <td>Colombia</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th scope="row">4</th>
+              <td>Enrique</td>
+              <td>Olluelo</td>
+              <td>Perú</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>David</td>
+              <td>Bisval</td>
+              <td>España</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>Lucas</td>
+              <td>Hernandez</td>
+              <td>Perú</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th scope="row">7</th>
+              <td>Robertiño</td>
+              <td>Portobelo</td>
+              <td>Brasil</td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>Miguel</td>
+              <td>Angel</td>
+              <td>Argentina</td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td>Emilia</td>
+              <td>Garcia</td>
+              <td>Argentina</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Formulario -->
+      <div class="col-4">
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label" style="color:white;">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="@gmail.com">
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label" style="color:white;">Contraseña</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="*********">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label" style="color:white;">Direccion</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Calle, numero, apartamento.">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress2" class="form-label" style="color:white;">Direccion Alterna (Opcional)</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Calle, numero, apartamento.">
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label" style="color:white;">Ciudad</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label" style="color:white;">País</label>
+            <select id="inputState" class="form-select">
+              <option selected>Buscar...</option>
+              <option>Argentina</option>
+              <option>Brasil</option>
+              <option>Chile</option>
+              <option>Bolivia</option>
+              <option>Perú</option>
+              <option>México</option>
+              <option>España</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label" style="color:white;">C.Postal</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck" style="color:white;">
+                ¿Estas seguro?
+              </label>
+            </div>
+          </div>
+          <div class="col-12" style="padding-bottom:30px;">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Imagenes -->
+
+  <div class="container-fluid" style="background-color:white;">
+    <div class="row justify-content-start">
+      <div class="col-6" style="background-color:black;padding-left:30px;">
+        <img src="Parque (1).jpg" alt="Imagen Parque">
+      </div>
+
+      <div class="col-6" style="background-color:black;padding-left:30px;">
+        <img src="Parque (2).jpg" alt="Imagen Parque">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid" style="background-color:black; padding-top:20px; padding-bottom: 40px;">
+    <div class="row justify-content-start">
+      <div class="col-6" style="background-color:black;padding-left:30px;">
+        <img src="Parque (3).jpg" alt="Imagen Parque">
+      </div>
+
+      <div class="col-6" style="background-color:black;padding-left:30px;">
+        <img src="Parque (4).jpg" alt="Imagen Parque">
+      </div>
+    </div>
+  </div>
+
+  <!-- Carrousen -->
+  <div class="container-fluid">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="City Large (2).jpg" alt="">" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Imagenes en Carrusel</h5>
+            <p>Representando a la mejor facultad.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="City Large (1).jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Imagenes en Carrusel</h5>
+            <p>Representando a la mejor facultad.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="City Large (3).jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Imagenes en Carrusel</h5>
+            <p>Representando a la mejor facultad.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+
+</body>
+
+
+</html>
