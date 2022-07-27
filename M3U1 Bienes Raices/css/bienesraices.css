@@ -1,0 +1,231 @@
+/* 
+font-family: 'Cormorant SC', serif; 
+*/
+
+body {
+    font-family: 'Cormorant SC', serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+header {
+    background: #835e05;
+    background: linear-gradient(90deg, #835e05 0%, #543d04 80%);
+    background: -webkit-linear-gradient(90deg, #835e05 0%, #543d04 80%);
+    background: -moz-linear-gradient(90deg, #835e05 0%, #543d04 80%);
+    padding: 16px;
+}
+
+
+header h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    display: inline-block;
+    position: relative;
+    bottom: 17px;
+    margin-left: -15px;
+}
+
+
+nav {
+    color: white;
+    background: #835e05;
+    background: linear-gradient(90deg, #835e05 0%, #543d04 80%);
+    background: -webkit-linear-gradient(90deg, #835e05 0%, #543d04 80%);
+    background: -moz-linear-gradient(90deg, #835e05 0%, #543d04 80%);
+    margin-bottom: 20px;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+nav ul li {
+    flex-grow: 1;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+}
+
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.212);
+}
+
+
+footer {
+    clear: both;
+    background: #835e05;
+    background: linear-gradient(90deg, #835e05 0%, #543d04 80%);
+    background: -webkit-linear-gradient(90deg, #835e05 0%, #543d04 80%);
+    background: -moz-linear-gradient(90deg, #835e05 0%, #543d04 80%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+nav ul li a.activo {
+    background-color: rgb(64, 52, 7);
+    font-weight: 900;
+}
+
+.holder {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #835e05;
+    font-weight: 700;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+/* Inicio Home */
+
+.Bienvenidos {
+    width: 75%;
+    padding: 10px 20px 20px 20px;
+    box-sizing: border-box;
+}
+
+.Bienvenidos p {
+    font-style: italic;
+}
+
+.Testimonios {
+    width: 25%;
+    margin-top: 8px;
+}
+
+.testimonio {
+    border: 2px solid #835e05;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.testimonio .testi {
+    background-color: #835e05;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+.testimonio .autor {
+    font-size: 12px;
+    text-align: center;
+    display: block;
+}
+
+.Columnas {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Fin Home */
+/* ------------------------------------------------------------------------------------------------- */
+/* Inicio Nosotros */
+
+.historia p {
+    font-size: 15px;
+}
+
+.personas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.persona {
+    border: 1px solid #000000;
+    border-radius: 3%;
+    width: 18%;
+    text-align: center;
+    padding: 13px;
+    font-size: 12px;
+    box-sizing: border-box;
+    /*  Hace que el padding y border pasen a formar ´parte del calculo de la caja  */
+    background-color: #835e05;
+}
+
+.persona img {
+    border-radius: 170px 170px 170px 170px;
+    -webkit-border-radius: 170px 170px 170px 170px;
+    -moz-border-radius: 170px 170px 170px 170px;
+    max-width: 80%;
+
+}
+
+.persona h5,
+.persona h6 {
+    margin: 0;
+    font-weight: normal;
+    color: white;
+}
+
+.persona h5 {
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+.persona h6 {
+    font-size: 13px;
+    font-style: italic;
+}
+
+/* Fin Nosotros */
+/* ------------------------------------------------------------------------------------------------- */
+/* Inicio Servicio */
+
+.servicio {
+    border: 3px solid #835e05;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px 0;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    /* Despega contenidos de la caja */
+}
+
+.servicio .info h4 {
+    font-size: 20px;
+    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.6);
+    font-weight: 900;
+    border-bottom: 1px solid #835e05;
+}
+
+.servicio p {
+    font-size: 15px;
+    font-style: italic;
+    line-height: 19px;
+    /*  Separa las lineas de texto */
+}
+
+.servicio img {
+    border-radius: 12px;
+    display: block;
+    max-width: 222px;
+}
+
+.servicio:nth-child(even) {
+    /* Esto es una psudoclase */
+    flex-direction: row-reverse;
+}
+
+
+/* Fin Servicio */
