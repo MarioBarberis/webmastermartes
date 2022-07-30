@@ -229,3 +229,97 @@ h2 {
 
 
 /* Fin Servicio */
+
+/* Inicio Galeria */
+
+.galeria img {
+    width: 18%;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    /* Para cuando agrandas algo, la caja se mantenga en su tamaño original */
+    padding: 0.3em;
+    margin-bottom: 20px;
+    margin-right: 2%;
+}
+
+.galeria {
+    display: flex;
+    /* Para tener los elementos uno al lado de otro (en este caso de corta imagen si achicamos ventana)*/
+    flex-wrap: wrap;
+    /* Aca decimos que halla "desbordamiento" los que entran a lo largo entran, y los que no van abajo.(NO se corta) */
+    justify-content: flex-start;
+
+}
+
+/* Fin Galeria */
+
+/* Inico Contactos */
+.contacto {
+    display: flex;
+    gap: 25px;
+}
+
+.contacto div {
+    width: 100%;
+}
+
+.datos p {
+    font-size: 18px;
+
+}
+
+.datos ul li {
+    font-size: 20px;
+}
+
+.formulario p {
+    display: flex;
+    /*  La etiqueta p en este caso de usa como Div, y se pone display para mover los elementos */
+}
+
+.formulario p label {
+    min-width: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.formulario p input,
+.formulario p textarea {
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 14px;
+    padding: 6px 10px;
+}
+
+.formulario textarea {
+    resize: none;
+    /* Esto deja fijo el lugar del textarea, y acontinuacion damos un ancho */
+    height: 150px;
+}
+
+.formulario p:nth-child(4) {
+    /* Esta es una PSUDOCLASE que elige especificamente al 4 parrafo IMPORTANTISIMO */
+    align-items: start;
+}
+
+.formulario input[type="submit"] {
+    /* Esto especifica con corchetes que parte se quiere trabajar */
+    background-color: #835e05;
+    box-shadow: 0 0 10px black;
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px;
+    width: auto;
+    position: relative;
+   /*  Esto permite hacer las siguiente ediciones de posicion */
+    left: 80px;
+    cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover{
+    background-color: #543d04;
+}
+
+/* Fin Contactos */
