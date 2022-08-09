@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+</head>
+
+<body>
+	<script>
+		var frutas = ["Manzana", "Banana", "Pera", "Sandia"];
+
+		console.log(frutas.length); //dice la cantidad
+		console.log(frutas); //me tira la pauta de cada cosa
+		
+		var primero = frutas[2]; // es la manzana
+		console.log(primero)
+		
+		var ultimo = frutas[frutas.length-1]; // siempre es el ultimo
+		console.log(ultimo)
+
+		var vegetales = ['Repollo', 'Nabo', 'Rábano', 'Zanahoria'];
+		
+		console.log(vegetales);  // ["Repollo", "Nabo", "Rábano", "Zanahoria"]
+		
+		var seleccionado = 2;
+		console.log(vegetales[seleccionado]);
+		
+		seleccionado = 1;
+		console.log(vegetales[seleccionado]);
+		
+		for( var i=0; i< vegetales.length; i++){
+			console.log('tenemos ' + vegetales[i])
+		}
+		
+		
+
+	</script>
+
+</body>
+</html>
