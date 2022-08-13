@@ -24,7 +24,7 @@
     	 // formulario
         const formulario = document.getElementById('formulario');
         formulario.addEventListener('submit', function(e) {
-            e.preventDefault();
+            e.preventDefault();                             //Aca se frena para ver si las condiciones de abajo de cumplen
             
             if(e.currentTarget.nombre.value == '') {
                 alert('El campo nombre es requerido');

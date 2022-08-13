@@ -9,7 +9,7 @@
 	<script>
 	function getNameDiasForMes(mes) {
 
-		if (Number.isNaN(mes)) return false;
+		if (Number.isNaN(mes)) return false;    //condicion para ingresar solo numeros
 
 		if (mes < 1 || mes > 12) return false;
 
@@ -20,7 +20,7 @@
 				nombre: 'Enero',
 				dias: 31,
 			}, {
-				nombre: 'Febrero',
+				nombre: 'Febrero',                          //se rellena la cantidad de numeros que se aplico
 				dias: 28,
 			}
 		]
@@ -29,11 +29,11 @@
 	}
 
 	const numMes = parseInt(prompt('Ingrese el mes del año: ', ''));
-	const resultado = getNameDiasForMes(numMes);
+	const resultado = getNameDiasForMes(numMes);                                  //toma los resultados
 
 	if (resultado) {
 		alert(`El mes ${resultado.nombre} tiene ${resultado.dias} días`);
-	} else {
+	} else {                                                                        //aplica condicion-mensajes
 		alert('Mes inválido');
 	}
 
