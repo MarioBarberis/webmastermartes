@@ -1,0 +1,238 @@
+/* Fuentes letra: 
+font-family: 'Orbitron', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; 
+*/
+
+body {
+    font-family: font-family: 'Roboto Condensed', sans-serif;
+}
+
+header {
+    display: flex;
+}
+
+.holder {
+    display: flex;
+    gap: 12px;
+    margin-top: 5px;
+    margin-left: 12px;
+}
+
+.holder img {
+    padding-top: 8px;
+}
+
+.holder h2 {
+    font-family: 'Orbitron', sans-serif;
+    margin-top: 30px;
+}
+
+.slogan {
+    margin-top: 15px;
+    margin-left: 50%;
+}
+
+nav {
+    margin-top: 20px;
+    background-color: black;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+nav ul li a {
+    color: white;
+    padding: 8px 10px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: rgb(37, 33, 33);
+}
+
+nav ul li a.activo {
+    background-color: rgb(23, 23, 23);
+}
+
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    text-align: justify;
+}
+
+
+footer {
+    color: white;
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/* ------------------------------------------ Home ------------------------------------------------ */
+
+.texto{
+    width: 70%;
+    margin-top: 15px;
+}
+
+.testimonios{
+    width: 25%;
+    margin-top: 8px;
+}
+
+.testimonio{
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.testimonio .testi{
+    background-color: #000000;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+.testimonio .autor {
+    font-size: 12px;
+    text-align: center;
+    display: block;
+}
+
+.columnas{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ---------------------------------------- Nosotros ------------------------------------------------ */
+
+
+.persona {
+    padding-top: 30px;
+    display: flex;
+    gap: 30px;}
+
+    .persona img {
+        border-radius: 61px 61px 61px 126px;
+        -webkit-border-radius: 61px 61px 61px 126px;
+        -moz-border-radius: 61px 61px 61px 126px;
+        border: 4px solid #000000;
+    }
+
+    .texto{
+        display: flexbox;
+        flex-direction: column;
+    }
+
+    .texto h2{
+        padding-bottom: 5px;
+        border: 2px solid #000000;
+        text-align: center;
+        font-style: blond;
+    }
+
+    .texto p{
+        font-style: italic;
+    }
+
+    .Ejecutivos{
+        margin-bottom: 80px;
+    }
+
+    /* ---------------------------------------- Galeria ---------------------------------------------- */
+
+    .galeria{
+        display: flexbox;
+        flex-direction: column;
+    }
+
+    .galeria img{
+       margin-top: 20px;
+    }
+
+    .galeria p{
+        margin-top: 25px;
+        font-style: italic;
+    }
+
+    /* ---------------------------------------- Contacto ---------------------------------------------- */
+
+    .holdercontac{
+        display: flex;
+        gap: 200px;
+    }
+
+    .formu{
+        border: 4px solid #000000;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .datos{
+        border: 4px solid #000000;
+        padding-right: 10px;
+        padding-left: 15px;
+    }
+
+    .datos img{
+        padding-left: 60px;
+        margin-top: 10px;
+        margin-bottom: -4px;
+    }
+
+    .formulario p{
+        display: flex;
+    }
+
+    .formulario p label{
+        min-width: 80px;
+        display: flex;
+        align-items: center;
+    }
+
+    .formulario p input,
+    .formulario p textarea{
+        width: 100%;
+        background-color: white;
+        border-radius: 5px;
+        border: 1px solid black;
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .formulario textarea{
+        resize: none;
+        height: 200px;
+    }
+
+    .formulario p:nth-child(4){
+        align-items: start;
+    }
+
+    .formulario input[type="submit"] {
+        background-color: #1f1e1b;
+        color: white;
+        font-size: 16px;
+        padding: 6px 20px;
+        width: auto;
+        position: relative;  /* Relative para hacer las ediciones que vienen abajo*/
+        left: 80px;
+        cursor: pointer;
+    }
+
+    .formulario input[type="submit"]:hover{
+        box-shadow: 0 0 10px black;
+    }
