@@ -1,0 +1,21 @@
+header{
+    background-color: rgb(152, 221, 252);
+}
+
+.holder h2{
+    margin-top: 0px;
+}
+
+.slogan h2{
+    margin-right: 200px;
+}
+
+main {
+margin-top: 60px;
+margin-bottom: 50px;
+}
+
+footer{
+    color: black;
+    background-color: rgb(152, 221, 252);
+}

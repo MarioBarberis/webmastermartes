@@ -7,9 +7,10 @@ var logger = require('morgan');
 require('dotenv').config();                     //Esto siempre va arriba en la posicion, tiene que cargar rapido.
 
 var indexRouter = require('./routes/index');
-var nosotrosRouter = require('./routes/nosotros')
-var galeriaRouter = require('./routes/galeria')
-var contactoRouter = require('./routes/contacto')
+var nosotrosRouter = require('./routes/nosotros');
+var galeriaRouter = require('./routes/galeria');
+var contactoRouter = require('./routes/contacto');
+var loginRouter = require('./routes/admin/login');
 
 var app = express();
 
@@ -27,6 +28,7 @@ app.use('/', indexRouter);
 app.use('/nosotros', nosotrosRouter);
 app.use('/galeria', galeriaRouter);
 app.use('/contacto', contactoRouter);
+app.use('/admin/login', loginRouter);
 
 
 // catch 404 and forward to error handler
