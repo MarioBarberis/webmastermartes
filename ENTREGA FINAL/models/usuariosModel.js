@@ -7,7 +7,7 @@ async function getUserByUsernameAndPassword(user, password) {
         var rows = await pool.query(query, [user, md5(password)]);
         return rows[0];
     } catch (error) {
-        throw error;
+        console.log(error);
     }
 }
 
