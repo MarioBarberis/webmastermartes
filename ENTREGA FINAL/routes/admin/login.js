@@ -9,6 +9,17 @@ router.get('/', function (req, res, next) {
   });
 });
 
+
+router.get('/logout', function (req, res, next) {
+  req.session.destroy(); 
+  
+  res.render('admin/login', {
+    layout: 'admin/layout',
+  });
+});
+
+
+
 module.exports = router;
 
 
@@ -17,13 +28,14 @@ router.post('/', async (req,res,next) => {
     var usuario = req.body.usuario;
     var password = req.body.password;
 
-    console.log(req.body);
+    /* console.log(req.body); */
 
     var data = await usuariosModel.getUserByUsernameAndPassword(usuario,password);
       
     if (data != undefined) {
       req.session.id_usuario = data.id;
-      req.session.nombre = data.usuario;
+      req.session.nombre = data.usuario; 
+      
       res.redirect('/admin/novedades');
     } else {
       res.render('admin/login', {
