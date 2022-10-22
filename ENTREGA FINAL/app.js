@@ -10,6 +10,7 @@ var session = require('express-session');
 var indexRouter = require('./routes/index');
 var nosotrosRouter = require('./routes/nosotros');
 var galeriaRouter = require('./routes/galeria');
+var novedadesRouter = require('./routes/novedades');
 var contactoRouter = require('./routes/contacto');
 var loginRouter = require('./routes/admin/login');
 var adminRouter = require('./routes/admin/novedades');
@@ -48,6 +49,7 @@ try {
 app.use('/', indexRouter);
 app.use('/nosotros', nosotrosRouter);
 app.use('/galeria', galeriaRouter);
+app.use('/novedades', novedadesRouter);
 app.use('/contacto', contactoRouter);
 app.use('/admin/login', loginRouter);
 app.use('/admin/novedades',secured, adminRouter);
