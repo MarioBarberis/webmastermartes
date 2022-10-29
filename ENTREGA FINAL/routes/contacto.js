@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer'); 
-
+var contactoModel = require('../models/contactoModel');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -13,7 +13,7 @@ router.get('/', function(req, res, next) {
 /* POST */
 router.post('/', async (req, res, next) => {
 
-  console.log(req.body)
+  /* console.log(req.body) */
 
   var nombre = req.body.nombre;
   var email = req.body.email;
@@ -35,7 +35,8 @@ router.post('/', async (req, res, next) => {
     }
   })
 
-  var info = await transporter.sendMail(obj);
+  var info = await transporter.sendMail(obj);   /* envio */
+  var contacto = await contactoModel.insertContacto(req.body);    /* guarda en base de datos */
 
   res.render('contacto',{
     isContacto: true,
