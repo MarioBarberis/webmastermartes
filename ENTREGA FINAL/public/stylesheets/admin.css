@@ -1,13 +1,20 @@
 header{
-    background-color: rgb(152, 221, 252);
+    color: white;
+    background-color: rgb(0, 0, 0);
 }
+
 
 .holder h2{
-    margin-top: 0px;
+    margin-top: 27px;
+    padding-bottom: 30px;
+    padding-left: 180px;
 }
 
-.slogan h2{
-    margin-right: 200px;
+
+.slogan h1{
+    margin-top: 15px;
+    margin-right: -800px;
+    padding-right: 700px;
 }
 
 main {
@@ -16,6 +23,6 @@ margin-bottom: 50px;
 }
 
 footer{
-    color: black;
-    background-color: rgb(152, 221, 252);
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
 }
